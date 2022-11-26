@@ -12,11 +12,11 @@ time-iterative: mylib.o
 	gcc -o main_time_complexity_iterative.out main_time_complexity_iterative.c mylib.o
 
 space-recursive: mylib.o 
-	gcc -o main_space_complexity_recursive.out main_space_complexity_recursive.c mylib.o 
+	gcc -o main_space_complexity_recursive.exe main_space_complexity_recursive.c mylib.o 
 
 space-iterative: mylib.o
-	gcc -o main_space_complexity_iterative.out main_space_complexity_iterative.c mylib.o
+	gcc -o main_space_complexity_iterative.exe main_space_complexity_iterative.c mylib.o
 	
 clear: 
-	rm -rf *.exe
+	rm -rf *.out
 	rm -rf *.o

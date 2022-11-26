@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <time.h>
+
 #include "mylib/mylib.h"
+
 
 int main(void){
 
@@ -15,7 +17,7 @@ int main(void){
     float endTime = (float)clock()/CLOCKS_PER_SEC;
     double time_taken = endTime - startTime;
 
-    printf("Time elapsed with iterative approach and N = %d is %f s\n",N,time_taken);
+    printf("Time taken on iterative approach with N = %d is %f\n", N, time_taken);
 
     return 0;
 }
