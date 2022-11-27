@@ -14,7 +14,7 @@ For a better understanding, take a look at the illustration below
 
 ![Fibonacci Illustration](./images/fibonacci-sequence-illustration.png)
 
-As you can see, in Fibonacci sequence to determine the N<sup>th</sup> sequence, the formula is
+As seen in the illustration above, in Fibonacci sequence to determine the N<sup>th</sup> sequence, the formula is
 $$
 F(N) = F(N-1) + F(N-2)
 $$
@@ -25,7 +25,9 @@ $$
 
 Iteration and Recursion are different ways to execute a set of instructions repeatedly.
 
-#### Recursion
+
+
+### Recursion
 
 The process of repeating actions in a similar way is referred to as recursion. Recursion is the process of calling a function within its own code in computer science. A recursive function is any function that calls itself, and recursive calls are function calls that do the same. Recursive functions are useful for many different types of problem-solving, including making the Fibonacci series.
 
@@ -45,7 +47,9 @@ int fibonacciRecursive(int N){
 }
 ```
 
-#### Iteration
+
+
+### Iteration
 
 In Iteration, there is the usage of loops to execute the set of instructions repetitively until the condition of the iteration statement becomes false.
 
@@ -77,24 +81,35 @@ int fibonacciIterative(int N){
 
 ## Testing
 
-Now, I will show you how to test the code by running it and compare the result of both approaches.
+Now, we will test the code by running it and compare the result of both approaches.
 
 
 
 ##### Follow the steps below.
 
 1. [Click here](https://github.com/aubertlenno/fibonacci-benchmark/archive/refs/heads/main.zip) to download the folder as zip
+
 2. Unzip the .zip file
+
 3. Search "Command Prompt" and run it
+
 4. Direct to the "fibonacci-benchmark" folder using `cd <folder path>`
-5. Compile the C file by using `gcc -o mylib.o -c mylib/mylib.c; gcc -o main.exe main.c mylib.o` <u>*Please take note that if you are using Linux or macOS, change `.exe` into `.out`*</u>
+
+5. Compile the C file by using `gcc -o mylib.o -c mylib/mylib.c; gcc -o main.exe main.c mylib.o`
+
+   <u>*Please take note that if you are using Linux or macOS, change `.exe` into `.out`*</u>
+
 6. Run the executable file by using `main.exe` for Windows and `./main.out` for Linux and macOS
-7. Type any number you want to search for N<sup>th</sup> sequence
-8. Then it will print this![Output for main.c](./images/run-main.png)
+
+7. Type any number you want to search for N<sup>th</sup> sequence (for example I type "3")
+
+8. Then it will print this
+
+   ![Output for main.c](./images/run-main.png)
 
 
 
-So, as you can see from the output, the result is the same when we're using both **Iterative** and **Recursive** approaches.
+So, as seen from the output, the result is the same when we're using both **Iterative** and **Recursive** approaches.
 
 
 
@@ -102,10 +117,97 @@ So, as you can see from the output, the result is the same when we're using both
 
 The result of both approaches is the same so what differentiate those two? Now I will show you the **time complexity** and **space complexity** difference between iterative and recursive approach. But before we move further, let's see the definition of time complexity and space complexity.
 
-#### Definition
 
-> Time complexity is defined as the amount of time taken by an algorithm to run, as a function of the length of the input. It measures the time taken to execute each statement of code in an algorithm.
->
-> [Read furthermore about time complexity]: https://www.mygreatlearning.com/blog/why-is-time-complexity-essential/
->
-> 
+
+### Definition
+
+###### Time Complexity
+
+Time Complexity is defined as the **amount of time taken** by an algorithm to run, as a function of the length of the input. It measures the time taken to execute each statement of code in an algorithm.
+
+###### Space Complexity
+
+Space Complexity refers to the **amount of memory or space** an algorithm takes to run as a function of the length of the input. Space complexity is a way to evaluate the performance of an algorithm.
+
+
+
+### Comparison
+
+Now, because we already know the basic definition of Time Complexity and Space Complexity. Let's compare both approaches' Time and Space Complexity.
+
+
+
+#### Time Complexity
+
+###### Iterative Approach
+
+Let's start with the iterative approach. Follow the steps below:
+
+1. [Click here](https://github.com/aubertlenno/fibonacci-benchmark/archive/refs/heads/main.zip) to download the folder as zip
+
+2. Unzip the .zip file
+
+3. Open Terminal if you are using Linux or macOS or use WSL if you are using Windows
+
+4. Refer to [this link](https://learn.microsoft.com/en-us/windows/wsl/install-manual) on how to install WSL
+
+5. Direct to the "fibonacci-benchmark" folder using `cd <folder path>`
+
+6. Run `make time-iterative; ./main_time_complexity_iterative.out`
+
+   *<u>Here, using .out file is better because you will get a more accurate result instead of rounded result using .exe file.</u>*
+
+7. Then, the output will be `Time taken on iterative approach with N = 40 is 0.000007 s`
+
+###### Recursive Approach
+
+Then continue with the recursive approach. Follow the steps below:
+
+1. Follow step 1 to 5 from the ***Iterative Approach***
+2. Run `make time-recursive; ./main_time_complexity_recursive.out`
+3. Then, the output will be `Time taken on recursive approach with N = 40 is 1.068592 s `
+
+As seen from the outputs from both approaches, **the Recursive Approach takes more time than the Iterative Approach**
+
+
+
+#### Space Complexity
+
+To check the space complexity, use "Task Manager" if you are using Windows or "Activity Monitor" if you are using macOS.
+
+###### Iterative Approach
+
+Let's start with the Iterative Approach. I'm using Windows for the step-by-step tutorial. Follow the steps below:
+
+1. [Click here](https://github.com/aubertlenno/fibonacci-benchmark/archive/refs/heads/main.zip) to download the folder as zip
+2. Unzip the .zip file
+3. Search "Command Prompt" and run it
+4. Direct to the "fibonacci-benchmark" folder using `cd <folder path>`
+5. Run `make space-iterative; main_space_complexity_iterative.exe` 
+6. Do not close the Command Prompt
+
+###### Recursive Approach
+
+Then with the Recursive Approach. Follow the steps below:
+
+1. Run `make space-recursive; main_space_complexity_recursive.exe`
+
+###### Comparing
+
+To compare, follow the steps below:
+
+1. Open "Task Manager"
+
+2. Search **main_space_complexity_iterative** and **main_space_complexity_recursive**
+
+3. Compare the memory taken by both programs. It will look like this
+
+   ![Space complexity comparison](./images/space-complexity.png)
+
+From the picture above, **the Recursive Approach takes up more space than the Iterative Approach.**
+
+
+
+## Conclusion
+
+In conclusion, Iterative Approach takes less time and space than the Recursive Approach. This is shown in the [comparison](#comparison) above.

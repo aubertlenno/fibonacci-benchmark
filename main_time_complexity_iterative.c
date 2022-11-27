@@ -6,7 +6,7 @@
 
 int main(void){
 
-    const int N = 30;
+    const int N = 40;
     
     float startTime = (float)clock()/CLOCKS_PER_SEC;
 
@@ -17,7 +17,7 @@ int main(void){
     float endTime = (float)clock()/CLOCKS_PER_SEC;
     double time_taken = endTime - startTime;
 
-    printf("Time taken on iterative approach with N = %d is %f\n", N, time_taken);
+    printf("Time taken on iterative approach with N = %d is %f s\n", N, time_taken);
 
     return 0;
 }
