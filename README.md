@@ -20,7 +20,6 @@ F(N) = F(N-1) + F(N-2)
 $$
 
 
-
 ## Recursion and Iteration
 
 Iteration and Recursion are different ways to execute a set of instructions repeatedly.
