@@ -152,7 +152,7 @@ Let's start with the iterative approach. Follow the steps below:
 
 5. Direct to the "fibonacci-benchmark" folder using `cd <folder path>`
 
-6. Run `make time-iterative; ./main_time_complexity_iterative.out`
+6. Run `make time-iterative; ./main_b_time_iterative.out`
 
    *<u>Here, using .out file is better because you will get a more accurate result instead of rounded result using .exe file.</u>*
 
@@ -163,7 +163,7 @@ Let's start with the iterative approach. Follow the steps below:
 Then continue with the recursive approach. Follow the steps below:
 
 1. Follow step 1 to 5 from the ***Iterative Approach***
-2. Run `make time-recursive; ./main_time_complexity_recursive.out`
+2. Run `make time-recursive; ./main_b_time_recursive.out`
 3. Then, the output will be `Time taken on recursive approach with N = 40 is 1.068592 s `
 
 As seen from the outputs from both approaches, **the Recursive Approach takes more time than the Iterative Approach**
@@ -182,14 +182,14 @@ Let's start with the Iterative Approach. I'm using Windows for the step-by-step 
 2. Unzip the .zip file
 3. Search "Command Prompt" and run it
 4. Direct to the "fibonacci-benchmark" folder using `cd <folder path>`
-5. Run `make space-iterative; main_space_complexity_iterative.exe` 
+5. Run `make space-iterative; main_b_space_iterative.exe` 
 6. Do not close the Command Prompt
 
 ###### Recursive Approach
 
 Then with the Recursive Approach. Follow the steps below:
 
-1. Run `make space-recursive; main_space_complexity_recursive.exe`
+1. Run `make space-recursive; main_b_space_recursive.exe`
 
 ###### Comparing
 
@@ -197,7 +197,7 @@ To compare, follow the steps below:
 
 1. Open "Task Manager"
 
-2. Search **main_space_complexity_iterative** and **main_space_complexity_recursive**
+2. Search **main_b_space_iterative** and **main_b_space_recursive**
 
 3. Compare the memory taken by both programs. It will look like this
 
