@@ -90,8 +90,22 @@ Now, I will show you how to test the code by running it and compare the result o
 5. Compile the C file by using `gcc -o mylib.o -c mylib/mylib.c; gcc -o main.exe main.c mylib.o` <u>*Please take note that if you are using Linux or macOS, change `.exe` into `.out`*</u>
 6. Run the executable file by using `main.exe` for Windows and `./main.out` for Linux and macOS
 7. Type any number you want to search for N<sup>th</sup> sequence
-8. Then it will print this![Output for main.c](C:\Users\Lenno\Documents\Binus\SC\Fibonacci-Benchmark\images\run-main.png)
+8. Then it will print this![Output for main.c](./images/run-main.png)
 
 
 
 So, as you can see from the output, the result is the same when we're using both **Iterative** and **Recursive** approaches.
+
+
+
+## Benchmarking
+
+The result of both approaches is the same so what differentiate those two? Now I will show you the **time complexity** and **space complexity** difference between iterative and recursive approach. But before we move further, let's see the definition of time complexity and space complexity.
+
+#### Definition
+
+> Time complexity is defined as the amount of time taken by an algorithm to run, as a function of the length of the input. It measures the time taken to execute each statement of code in an algorithm.
+>
+> [Read furthermore about time complexity]: https://www.mygreatlearning.com/blog/why-is-time-complexity-essential/
+>
+> 
