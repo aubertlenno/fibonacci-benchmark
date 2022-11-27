@@ -15,6 +15,7 @@ For a better understanding, take a look at the illustration below
 ![Fibonacci Illustration](./images/fibonacci-sequence-illustration.png)
 
 As seen in the illustration above, in Fibonacci sequence to determine the N<sup>th</sup> sequence, the formula is
+
 $$
 F(N) = F(N-1) + F(N-2)
 $$
