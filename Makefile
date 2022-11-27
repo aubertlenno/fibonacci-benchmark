@@ -20,3 +20,4 @@ space-iterative: mylib.o
 clear: 
 	rm -rf *.out
 	rm -rf *.o
+	rm -rf *.exe

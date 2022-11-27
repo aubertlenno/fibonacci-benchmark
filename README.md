@@ -20,6 +20,7 @@ F(N) = F(N-1) + F(N-2)
 $$
 
 
+
 ## Recursion and Iteration
 
 Iteration and Recursion are different ways to execute a set of instructions repeatedly.
@@ -78,4 +79,19 @@ int fibonacciIterative(int N){
 
 Now, I will show you how to test the code by running it and compare the result of both approaches.
 
-First, 
+
+
+##### Follow the steps below.
+
+1. [Click here](https://github.com/aubertlenno/fibonacci-benchmark/archive/refs/heads/main.zip) to download the folder as zip
+2. Unzip the .zip file
+3. Search "Command Prompt" and run it
+4. Direct to the "fibonacci-benchmark" folder using `cd <folder path>`
+5. Compile the C file by using `gcc -o mylib.o -c mylib/mylib.c; gcc -o main.exe main.c mylib.o` <u>*Please take note that if you are using Linux or macOS, change `.exe` into `.out`*</u>
+6. Run the executable file by using `main.exe` for Windows and `./main.out` for Linux and macOS
+7. Type any number you want to search for N<sup>th</sup> sequence
+8. Then it will print this![Output for main.c](C:\Users\Lenno\Documents\Binus\SC\Fibonacci-Benchmark\images\run-main.png)
+
+
+
+So, as you can see from the output, the result is the same when we're using both **Iterative** and **Recursive** approaches.
